@@ -1,0 +1,12 @@
+{
+  "name": "docker-cdmon",
+  "version": "1.0.0",
+  "description": "Docker image for CDMON dynamic DNS IP update",
+  "keywords": [
+    "cdmon",
+    "dynamic",
+    "dns"
+  ],
+  "author": "Pablo Ferraris",
+  "license": "MIT"
+}

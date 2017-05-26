@@ -1,0 +1,12 @@
+version: '2'
+services:
+    cdmon:
+        container_name: cdmon
+        build:
+          context: .
+        restart: always
+        environment:
+          CDMON_DOMAIN: domain.com
+          CDMON_USERNAME: username
+          CDMON_PASSWORD: md5(password)
+          CDMON_INTERVAL: 1800000
