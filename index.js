@@ -103,7 +103,7 @@ function updateIp() {
     return getCdmonData(username, password).then(cdmonData => {
       console.log('Getting data:', cdmonData);
       if (cdmonData.newip !== currentIp) {
-        return setCdmonData(username, password, currentIp).then(cdmonData => {
+        return setCdmonData(username, password, cdmonData.newip).then(cdmonData => {
           console.log('Updating data:', cdmonData);
         });
       }
